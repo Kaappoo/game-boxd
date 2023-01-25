@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.foto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gameimage {
+  height: 200px;
+  width: 140px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+  top: 160px;
+  left: 50px;
+}
+
+.backgroundimage {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.game {
+    display: flex;
+    padding-top: 30px;
+}
+
+.game h1{
+    margin-left: 200px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate span {
+  font-family: var(--fonte);
+  color: white;
+  font-size: 30px;
+  background-color: var(--azulBonito);
+  padding: 10px 20px;
+}

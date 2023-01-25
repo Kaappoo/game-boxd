@@ -1,0 +1,77 @@
+.jogo {
+  background-color: white;
+  height: 230px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  color: var(--brancoTexto);
+  margin: 10px 20px;
+}
+
+.jogos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.jogo img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.gameinfo {
+  background-color: var(--azulBonito);
+  height: 34%;
+  font-family: var(--fonte);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar {
+  background-color: var(--azulBonito);
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.topbar span {
+  color: var(--brancoTexto);
+  font-family: var(--fonte);
+  font-size: 2em;
+  color: black;
+}
+
+.topbar input {
+  border-width: 0px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+  margin-right: 10px;
+}
+
+.topbar h1 {
+  margin-left: 10px;
+}
+
+.resultados {
+  position: absolute;
+  background-color: white;
+  right: 10px;
+  top: 75px;
+  max-height: 300px;
+  min-height: 100px;
+  width: 209px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.resultados img {
+  height: 50px;
+  width: 50px;
+}

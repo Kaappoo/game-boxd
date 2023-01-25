@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@600&display=swap');
+
+:root{
+  --background: rgb(22, 21, 21);
+  --brancoTexto: rgb(248, 247, 247);
+  --fonte:'Sofia Sans', sans-serif;
+  --azulBonito: rgb(65, 58, 145);
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+}
+h1 {
+  color: var(--brancoTexto);
+  font-family: var(--fonte);
+}
