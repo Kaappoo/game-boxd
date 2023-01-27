@@ -4,13 +4,14 @@ import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 
+
 export default function Home({ list }) {
   const [search, setSearch] = useState("");
   const [gameSearch, setGameSearch] = useState([]);
  
   
 
-  const handleSearch = async () => {
+  const handleSearch = async (search) => {
     if (search !== "") {
       const result = await fetch(
         `http://localhost:3000/api/pesquisa/${search}`
@@ -42,13 +43,14 @@ export default function Home({ list }) {
             }}
             value={search}
             onChange={(event) => {
+              handleSearch(event.target.value);
               setSearch(event.target.value);
-              handleSearch();
             }}
           />
           {search && (
             <div className={styles.resultados}>
               {gameSearch.map((item) => {
+                return(
                 <Link href={`/jogo/${item.id}`}>
                   <div className={styles.jogoPesquisa}>
                     <img src={item.background_image} />
@@ -57,6 +59,7 @@ export default function Home({ list }) {
                     </div>
                   </div>
                 </Link>
+                )
               })}
             </div>
           )}

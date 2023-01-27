@@ -38,17 +38,35 @@
 .conteudo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.texto {
+  background-color: white;
+  width: 80%;
+  font-family: var(--fonte);
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .rate {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  background-color: var(--azulBonito);
+  padding: 10px 20px;
 }
 
 .rate span {
   font-family: var(--fonte);
   color: white;
   font-size: 30px;
-  background-color: var(--azulBonito);
-  padding: 10px 20px;
+}
+
+.estrelas {
+  display: flex;
+  justify-content: center;
 }

@@ -69,9 +69,19 @@
   min-height: 100px;
   width: 209px;
   border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
+  
 }
 
 .resultados img {
   height: 50px;
   width: 50px;
+}
+
+.jogoPesquisa {
+display: flex;
+}
+
+.jogoPesquisa span {
+  font-size: 15px;
 }

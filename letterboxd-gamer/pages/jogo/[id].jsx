@@ -3,9 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "../../styles/jogoPage.module.css";
+import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
+import { useState } from "react";
+import StarRating from "../../components/starRating";
 
 
 export default function jogoItem({ info }) {
+  const [qntEstrelas, setQntEstrelas] = useState(0);
+
+  const darNota = (nota) => {
+    setQntEstrelas(nota);
+    
+  };
   return (
     <>
       <main className={styles.main}>
@@ -22,8 +32,12 @@ export default function jogoItem({ info }) {
         <div className={styles.conteudo}>
           <div className={styles.rate}>
             <span>De sua nota!</span>
+            <div className={styles.estrelas}>
+              <StarRating />
+            </div>
             <input type="text" />
           </div>
+          <div className={styles.texto}>{info.info.description_raw}</div>
         </div>
       </main>
     </>

@@ -1,0 +1,7 @@
+.estrelas input[type="radio"] {
+    display: none;
+}
+
+.estrela {
+    cursor: pointer;
+}
