@@ -33,7 +33,7 @@ export default function jogoItem({ info }) {
           <div className={styles.rate}>
             <span>De sua nota!</span>
             <div className={styles.estrelas}>
-              <StarRating />
+              <StarRating slug={info.info.slug}/>
             </div>
             <input type="text" />
           </div>

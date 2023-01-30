@@ -3,7 +3,9 @@ import { AiFillStar } from "react-icons/ai";
 import styles from "./starRating.module.css";
 import { useState } from "react";
 
-const StarRating = () => {
+
+
+const StarRating = (props) => {
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   return (
